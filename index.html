@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--Main Contanier-->
+
+        <div class="container">
+
+                        <h3>Expense Tracker</h3>
+
+
+            <div class="summary" id="summary">
+
+                <div class="total-balance">
+                    <h3 class="total">Total Balance</h3>
+                    <p class="summary-title" id="summary-balance">$</p>
+                </div> <br>
+
+                <div class="income-expense">
+                    <div>
+                        <p class="income">Income</p>
+                        <p class="summary-title" id="summary-income">+$</p>
+                    </div>
+
+                    <div>
+                        <p class="expense">Expense</p>
+                        <p class="summary-title" id="summary-expense">-$</p>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!--Form Section-->
+            <div class="form">
+                <div class="input-wrap">
+                    <label for="expense">Amount:</label> <br>
+                        <input type="number" id="expense" class="form-input">
+                </div>
+
+                <div class="input-wrap">
+                    <label for="date">Date:</label> <br>
+                        <input type="date" id="date" class="form-input">
+                </div>
+
+                <!--Type and Category-->
+                <div class="input-wrap">
+                    <div class="input-wrap">
+                        <label for="transaction-type">Type:</label> <br>
+                        <select name="transaction-type" id="transaction-type" class="form-input">
+                            <option value="income" id="transaction-income">Income</option>
+                            <option value="expense" id="transaction-expense">Expense</option>
+                        </select>
+                    </div>
+
+                    <div class="input-wrap with-button">
+                        <div>
+                            <label for="category">Title:</label> <br>
+                            <input type="text" id="category" class="form-input">
+                        </div>
+                        <button type="button" class="form-input" id="button">Add Transaction</button>
+                    </div> 
+                    <!--Type and Category ends-->
+                </div>
+            </div>
+
+        <!--Form Section Ending-->
+
+            
+
+            <div id="transaction-history">
+                <p class="summary-head">Transaction history</p>
+            </div>
+
+        
+        </div>
+                <script src="index.js"></script>
+    </body>
+</html>

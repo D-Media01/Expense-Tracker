@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.summary {
+    width: 95%;
+    max-width: 350px;
+    background-color: rgb(138, 138, 138);
+    margin: 0 auto;
+    padding: 1rem;
+    color: white;
+    border-radius: 8px;
+}
+
+.total-balance{
+    text-align: center;
+}
+
+.total {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#summary-balance {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.income, .expense {
+    font-size: 1rem;
+    
+}
+
+#summary-income {
+    color: green;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+#summary-expense {
+    color: red;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.income-expense {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.container {
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    max-width: 600px;
+    background: rgb(223, 222, 207);
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center; /* horizontal */
+    align-items: center;
+}
+
+.form-input {
+    width: 16.5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 8px; 
+}
+
+.input-wrap {
+    margin-top: 1rem;
+}
+
+.type-category {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+#transaction-type, #category {
+    width: 8rem;
+}
+
+#button {
+    width: 7rem;
+    margin-top: 1rem;
+}
+
+.summary {
+    margin-top: 1rem;
+}
+
+.summary-head {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.summary-title {
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+}
+
+
+.transaction-item {
+    padding: 0.5rem;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+.with-button {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.transaction-category {
+    font-size: 1.3rem;
+    
+}
+
+.category-expense {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.transaction-expense {
+    font-size: 1rem;
+    color: green;
+}
+
+.transaction-date {
+    font-size: 0.8rem;
+}
+
+.transaction-expense.income {
+    color: green;
+    font-weight: 600;
+}
+
+.transaction-expense.expense {
+    color: red;
+    font-weight: 600;
+}
